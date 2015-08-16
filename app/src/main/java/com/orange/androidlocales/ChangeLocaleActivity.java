@@ -23,7 +23,6 @@ public class ChangeLocaleActivity extends BaseActivity {
     @Extra("country")
     String country;
 
-    @TargetApi(Build.VERSION_CODES.KITKAT)
     @AfterExtras
     public void updateLocaleAndCountry() {
 
@@ -35,7 +34,7 @@ public class ChangeLocaleActivity extends BaseActivity {
             manager.updateConfiguration(configuration);
             Toast.makeText(this, String.format("Locale updated to %s_%s", language, country), Toast.LENGTH_SHORT).show();
 
-        } catch (ReflectiveOperationException e) {
+        } catch (Exception e) {
             Toast.makeText(this, String.format("Failed to updated locale to %s_%s", language, country), Toast.LENGTH_SHORT).show();
         }
         this.finish();
