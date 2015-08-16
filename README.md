@@ -14,11 +14,13 @@ Grant the required permissions to the application
 
     adb shell pm grant com.orange.androidlocales android.permission.CHANGE_CONFIGURATION
 
+> This is required since android 4.2 and changes to settings. More info [here](http://developer.android.com/about/versions/android-4.2.html).
+
 Change the locale to whatever you want. Example setting fr_FR (French from France)
 
     adb shell am start -n com.orange.androidlocales/.ChangeLocaleActivity_ -e language fr -e country FR
 
-> This is required since android 4.2 and changes to settings. More info [here](http://developer.android.com/about/versions/android-4.2.html).
+> The application does not check if the language et country you pass are valid, and assumes you know what you are doing. If the change cannot be made for any reason, the application will silently fail, and terminate.
 
 ## How to build
 Make sure you have all the [tools](https://developer.android.com/sdk/index.html) needed to build an android application.
