@@ -3,11 +3,13 @@
 
     <string name="app_name">Android Locales</string>
     <string name="help_intro">This application allows to change the locale (and country) of you device. It is intended to be used to automate tests on devices.</string>
-    <string name="help_content">To change locale and country, run the following command in your shell:\n
-    adb shell am start -n com.orange.androidlocales/.ChangeLocaleActivity_ -e language fr -e country FR\n
+    <string name="help_content">First, grant the application rights to modify your settings with the following command:\n\n
+    <i>adb shell pm grant com.orange.androidlocales android.permission.CHANGE_CONFIGURATION</i>\n\n
+    To change locale and country, run the following command in your shell:\n\n
+    <i>adb shell am start -n com.orange.androidlocales/.ChangeLocaleActivity_ -e language fr -e country FR</i>\n\n
     This will set the locale to fr_FR (French / France)</string>
-    <string name="help_more">Find more info on the github project page: https://github.com/TODO</string>
+    <string name="help_more">Find more info on the <a href="https://github.com/softsam/android-locales">github project page</a></string>
+
     <string name="change_locale_activity_title">Change Locale</string>
-    <string name="help_activity_title">Change Locale Help</string>
 
 </resources>

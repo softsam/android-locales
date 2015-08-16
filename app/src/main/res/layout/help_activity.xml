@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_padding">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/help_activity_title"/>
+        style="@style/help_intro"
+        android:text="@string/help_intro"
+        android:layout_marginBottom="@dimen/default_margin" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/help_intro"/>
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:text="@string/help_content" />
 
     <TextView
+        android:id="@+id/more_help"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/help_content"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/help_more"/>
+        android:text="@string/help_more" />
 </LinearLayout>
