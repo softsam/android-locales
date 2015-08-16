@@ -2,5 +2,9 @@
 <resources>
 
     <string name="app_name">Android Locales</string>
+    <string name="help_title">Android Locales</string>
+    <string name="help_intro">This application allows to change the locale (and country) of you device. It is intended to be used to automate tests on devices.</string>
+    <string name="help_content">To change locale and country, run the following command in your shell</string>
+    <string name="help_more">Find more info on the github project page: https://github.com/TODO</string>
 
 </resources>
