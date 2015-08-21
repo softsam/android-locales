@@ -1,8 +1,6 @@
 package com.orange.androidlocales;
 
-import android.annotation.TargetApi;
 import android.content.res.Configuration;
-import android.os.Build;
 import android.widget.Toast;
 
 import org.androidannotations.annotations.AfterExtras;

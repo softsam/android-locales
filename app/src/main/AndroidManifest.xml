@@ -20,12 +20,8 @@
 
         <activity
             android:name=".ChangeLocaleActivity_"
-            android:label="@string/change_locale_activity_title">
-
-            <intent-filter>
-                <action android:name="change" />
-                <category android:name="android.intent.category.MONKEY" />
-            </intent-filter>
+            android:label="@string/change_locale_activity_title"
+            android:exported="true">
         </activity>
     </application>
 
